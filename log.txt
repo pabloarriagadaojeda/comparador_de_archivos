@@ -1,0 +1,6 @@
+2024-07-17 11:26:29 INFO Diferencia en la celda: $A$120 en la hoja: Hoja1
+2024-07-17 11:26:29 INFO Diferencia en la celda: $B$120 en la hoja: Hoja1
+2024-07-17 11:26:30 INFO Diferencia en la celda: $B$160 en la hoja: Hoja1
+2024-07-17 11:26:30 INFO Diferencia en la celda: $A$186 en la hoja: Hoja1
+2024-07-17 11:26:30 INFO Diferencia en la celda: $A$1 en la hoja: Hoja2
+2024-07-17 11:26:30 INFO Diferencia en la celda: $B$1 en la hoja: Hoja2
