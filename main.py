@@ -11,8 +11,8 @@ logging.basicConfig(
 
 logging.info("Proceso iniciado")
 
-wb1 = xw.Book('doc1.xlsx')
-wb2 = xw.Book('doc2.xlsx')
+wb1 = xw.Book('Resumen AA.xlsx')
+wb2 = xw.Book('Resumen AA v2.xlsx')
 
 wb_diff = xw.Book()
 
@@ -49,12 +49,10 @@ for index, (sheet1, sheet2) in enumerate(zip(wb1.sheets, wb2.sheets), start=1):
 if len(wb_diff.sheets) > 0:
     wb_diff.sheets[0].delete()
 
-#Guarda el nuevo libro
 wb_diff_name = "Diferencias.xlsx"
 wb_diff.save(wb_diff_name)
 
 
-# Cierra los libros
 wb1.close()
 wb2.close()
 wb_diff.close()

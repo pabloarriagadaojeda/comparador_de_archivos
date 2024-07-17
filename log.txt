@@ -6,3 +6,24 @@
 2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
 2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
 2024-07-17 13:25:42 INFO Proceso finalizado, se ha guardado el libro Diferencias.xlsx
+2024-07-17 14:55:00 INFO Proceso iniciado
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
+2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:05 INFO Proceso iniciado
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
+2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
+2024-07-17 15:00:49 INFO Proceso iniciado
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
+2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
