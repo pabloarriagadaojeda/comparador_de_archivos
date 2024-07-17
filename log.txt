@@ -1,16 +1,8 @@
-2024-07-17 12:44:59 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
-2024-07-17 12:44:59 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
-2024-07-17 12:45:00 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
-2024-07-17 12:45:00 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
-2024-07-17 13:08:17 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
-2024-07-17 13:08:17 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
-2024-07-17 13:08:18 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
-2024-07-17 13:08:18 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
-2024-07-17 13:08:18 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
-2024-07-17 13:08:18 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
-2024-07-17 13:10:09 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
-2024-07-17 13:10:09 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
-2024-07-17 13:10:09 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
-2024-07-17 13:10:10 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
-2024-07-17 13:10:10 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
-2024-07-17 13:10:10 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
+2024-07-17 13:25:35 INFO Proceso iniciado
+2024-07-17 13:25:40 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
+2024-07-17 13:25:40 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
+2024-07-17 13:25:41 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
+2024-07-17 13:25:41 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
+2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
+2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
+2024-07-17 13:25:42 INFO Proceso finalizado, se ha guardado el libro Diferencias.xlsx
