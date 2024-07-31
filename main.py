@@ -1,61 +1,111 @@
-import xlwings as xw
-import logging
-
-# Configura el logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    filename="log.txt"
-)
-
-logging.info("Proceso iniciado")
-
-wb1 = xw.Book('Resumen AA.xlsx')
-wb2 = xw.Book('Resumen AA v2.xlsx')
-
-wb_diff = xw.Book()
-
-#Color de resaltado
-resaltado = (250, 150, 0)
-
-# Recorre todas las hojas de ambos libros
-for index, (sheet1, sheet2) in enumerate(zip(wb1.sheets, wb2.sheets), start=1):
-    #Asigna el nombre a cada hoja nueva
-    diff_sheet_name = f"{sheet1.name}_Dif_{index}"
-
-    #Crea una hoja al final del libro y accede a ella
-    wb_diff.sheets.add(diff_sheet_name, after=wb_diff.sheets[-1])
-    ws_diff = wb_diff.sheets[diff_sheet_name]
-
-    # Verifica que las hojas a comparar tengan el mismo nombre
-    if sheet1.name != sheet2.name:
-        logging.error(f"Las hojas no coinciden: {sheet1.name} y {sheet2.name}")
-        continue
-
-    # Recorre las celdas en un rango para hacerlo más rápido
-    for celda1, celda2 in zip(sheet1.used_range, sheet2.used_range):
-        if celda1.value != celda2.value:
-            print(f"Diferencia en valor en la celda: {celda1.address} en la hoja: {sheet1.name}")
-            logging.info(f"Diferencia en valor en la celda: {celda1.address} en la hoja: {sheet1.name}")
-
-            #Asigna 1 si hay diferencia y 0 si no
-            ws_diff.range(celda1.address).value = 1
-            ws_diff.range(celda1.address).color = resaltado
-        
-        else:
-            ws_diff.range(celda1.address).value = 0
-
-if len(wb_diff.sheets) > 0:
-    wb_diff.sheets[0].delete()
-
-wb_diff_name = "Diferencias.xlsx"
-wb_diff.save(wb_diff_name)
+import tkinter as tk
+from tkinter import filedialog, messagebox
+from consolidar_tablas import consolidar
+from comparar_libros_excel import comparar
 
 
-wb1.close()
-wb2.close()
-wb_diff.close()
+def select_file(entry):
+    file_path = filedialog.askopenfilename(
+        filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")])
+    if file_path:
+        entry.delete(0, tk.END)
+        entry.insert(0, file_path)
 
-logging.info(f"Proceso finalizado, se ha guardado el libro {wb_diff_name}")
-print(f"Se han guardado las diferencias en el libro '{wb_diff_name}'")
+
+def save_file(entry):
+    file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[
+                                             ("Excel files", "*.xlsx"), ("All files", "*.*")])
+    if file_path:
+        entry.delete(0, tk.END)
+        entry.insert(0, file_path)
+
+
+def open_consolidar_window():
+    consolidar_window = tk.Toplevel(root)
+    consolidar_window.title("Consolidar Excel")
+
+    tk.Label(consolidar_window, text="Archivo de entrada:").grid(
+        row=0, column=0, sticky=tk.W)
+    entry_input = tk.Entry(consolidar_window, width=50)
+    entry_input.grid(row=0, column=1, padx=5, pady=5)
+    tk.Button(consolidar_window, text="Seleccionar", command=lambda: select_file(
+        entry_input)).grid(row=0, column=2, padx=5, pady=5)
+
+    tk.Label(consolidar_window, text="Archivo de salida:").grid(
+        row=1, column=0, sticky=tk.W)
+    entry_output = tk.Entry(consolidar_window, width=50)
+    entry_output.grid(row=1, column=1, padx=5, pady=5)
+    tk.Button(consolidar_window, text="Guardar como", command=lambda: save_file(
+        entry_output)).grid(row=1, column=2, padx=5, pady=5)
+
+    def run_consolidar():
+        ruta_base = entry_input.get()
+        ruta_salida = entry_output.get()
+        if not ruta_base or not ruta_salida:
+            messagebox.showerror(
+                "Error", "Por favor, selecciona los archivos de entrada y salida")
+            return
+        try:
+            consolidar(ruta_base, ruta_salida)
+            messagebox.showinfo("Éxito", "El proceso se completó exitosamente")
+        except Exception as e:
+            messagebox.showerror("Error", f"Ha ocurrido un error: {e}")
+
+    tk.Button(consolidar_window, text="Ejecutar", command=run_consolidar).grid(
+        row=2, column=0, columnspan=3, pady=10)
+
+
+def open_comparar_window():
+    comparar_window = tk.Toplevel(root)
+    comparar_window.title("Comparar archivos")
+
+    tk.Label(comparar_window, text="Archivo de entrada 1:").grid(
+        row=0, column=0, sticky=tk.W)
+    entry_input1 = tk.Entry(comparar_window, width=50)
+    entry_input1.grid(row=0, column=1, padx=5, pady=5)
+    tk.Button(comparar_window, text="Seleccionar", command=lambda: select_file(
+        entry_input1)).grid(row=0, column=2, padx=5, pady=5)
+
+    tk.Label(comparar_window, text="Archivo de entrada 2:").grid(
+        row=1, column=0, sticky=tk.W)
+    entry_input2 = tk.Entry(comparar_window, width=50)
+    entry_input2.grid(row=1, column=1, padx=5, pady=5)
+    tk.Button(comparar_window, text="Seleccionar", command=lambda: select_file(
+        entry_input2)).grid(row=1, column=2, padx=5, pady=5)
+
+    tk.Label(comparar_window, text="Archivo de salida:").grid(
+        row=2, column=0, sticky=tk.W)
+    entry_output = tk.Entry(comparar_window, width=50)
+    entry_output.grid(row=2, column=1, padx=5, pady=5)
+    tk.Button(comparar_window, text="Guardar como", command=lambda: save_file(
+        entry_output)).grid(row=2, column=2, padx=5, pady=5)
+
+    def run_comparar():
+        ruta_libro1 = entry_input1.get()
+        ruta_libro2 = entry_input2.get()
+        ruta_salida = entry_output.get()
+        if not ruta_libro1 or not ruta_libro2 or not ruta_salida:
+            messagebox.showerror(
+                "Error", "Por favor, selecciona los archivos de entrada y salida")
+            return
+        try:
+            comparar(ruta_libro1, ruta_libro2, ruta_salida)
+            messagebox.showinfo("Éxito", "El proceso se completó exitosamente")
+        except Exception as e:
+            messagebox.showerror("Error", f"Ha ocurrido un error: {e}")
+
+    tk.Button(comparar_window, text="Ejecutar", command=run_comparar).grid(
+        row=3, column=0, columnspan=3, pady=10)
+
+
+root = tk.Tk()
+root.geometry("300x200")
+
+root.title("Gestor de Archivos Excel")
+
+tk.Button(root, text="Consolidar Excel",
+          command=open_consolidar_window).pack(pady=30, padx=10)
+tk.Button(root, text="Comparar Excel",
+          command=open_comparar_window).pack(pady=10, padx=10)
+
+root.mainloop()

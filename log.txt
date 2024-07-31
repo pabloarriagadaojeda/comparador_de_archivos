@@ -1,29 +1,34 @@
-2024-07-17 13:25:35 INFO Proceso iniciado
-2024-07-17 13:25:40 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
-2024-07-17 13:25:40 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
-2024-07-17 13:25:41 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
-2024-07-17 13:25:41 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
-2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
-2024-07-17 13:25:42 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
-2024-07-17 13:25:42 INFO Proceso finalizado, se ha guardado el libro Diferencias.xlsx
-2024-07-17 14:55:00 INFO Proceso iniciado
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
-2024-07-17 14:55:16 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:05 INFO Proceso iniciado
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
-2024-07-17 14:58:22 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
-2024-07-17 15:00:49 INFO Proceso iniciado
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
-2024-07-17 15:01:03 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
+2024-07-31 11:43:01 INFO Proceso iniciado
+2024-07-31 11:43:10 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
+2024-07-31 11:43:10 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
+2024-07-31 11:43:10 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
+2024-07-31 11:43:11 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
+2024-07-31 11:43:11 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
+2024-07-31 11:43:11 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
+2024-07-31 11:43:26 INFO Proceso finalizado, se ha guardado el libro /Users/pabloarriagadaojeda/Desktop/comparador_de_archivos/archivos_test/test_comparacion.xlsx
+2024-07-31 11:47:41 INFO Proceso iniciado
+2024-07-31 11:47:45 INFO Diferencia en valor en la celda: $A$120 en la hoja: Hoja1
+2024-07-31 11:47:45 INFO Diferencia en valor en la celda: $B$120 en la hoja: Hoja1
+2024-07-31 11:47:45 INFO Diferencia en valor en la celda: $B$160 en la hoja: Hoja1
+2024-07-31 11:47:46 INFO Diferencia en valor en la celda: $A$186 en la hoja: Hoja1
+2024-07-31 11:47:46 INFO Diferencia en valor en la celda: $A$1 en la hoja: Hoja2
+2024-07-31 11:47:46 INFO Diferencia en valor en la celda: $B$1 en la hoja: Hoja2
+2024-07-31 11:47:46 INFO Proceso finalizado, se ha guardado el libro /Users/pabloarriagadaojeda/Desktop/comparador_de_archivos/archivos_test/test_comparacion_2.xlsx
+2024-07-31 11:48:38 INFO Proceso iniciado
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
+2024-07-31 11:49:30 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
+2024-07-31 12:05:37 INFO Proceso iniciado
+2024-07-31 12:06:30 INFO Diferencia en valor en la celda: $C$20 en la hoja: Rep Roturas AP
+2024-07-31 12:06:30 INFO Diferencia en valor en la celda: $D$20 en la hoja: Rep Roturas AP
+2024-07-31 12:06:30 INFO Diferencia en valor en la celda: $E$20 en la hoja: Rep Roturas AP
+2024-07-31 12:06:30 INFO Diferencia en valor en la celda: $F$20 en la hoja: Rep Roturas AP
+2024-07-31 12:06:30 INFO Diferencia en valor en la celda: $G$20 en la hoja: Rep Roturas AP
+2024-07-31 12:06:31 INFO Diferencia en valor en la celda: $H$20 en la hoja: Rep Roturas AP
+2024-07-31 12:16:23 INFO Proceso finalizado, se ha guardado el libro /Users/pabloarriagadaojeda/Desktop/comparador_de_archivos/archivos_test/test_comparacion_3.xlsx
+2024-07-31 12:47:57 INFO Proceso iniciado
+2024-07-31 12:48:47 INFO Proceso iniciado
+2024-07-31 12:48:47 INFO Archivo /Users/pabloarriagadaojeda/Desktop/comparador_de_archivos/archivos_test/NBI 2019 AGUAS MANQUEHUE  - Consolidado.xlsx eliminado para evitar duplicados
